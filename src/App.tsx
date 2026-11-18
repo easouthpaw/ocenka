@@ -430,9 +430,8 @@ export default function App() {
                               inputMode={npMode ? 'none' : 'decimal'}
                               aria-label={`${r.name}, неделя ${w + 1}`}
                               placeholder="·"
-                              className={`block h-10 w-full min-w-11 text-center outline-none placeholder:text-notion-subtle/70 ${
-                                np ? 'bg-notion-surface text-[12px] text-notion-muted' : 'bg-transparent'
-                              } ${npMode ? 'cursor-pointer caret-transparent hover:bg-notion-surface' : 'focus:bg-notion-blue-soft focus:shadow-[inset_0_0_0_2px_#097fe8]'}`}
+                              className={`block h-10 w-full min-w-11 text-center outline-none placeholder:text-notion-subtle/70 ${np ? 'bg-notion-surface text-[12px] text-notion-muted' : 'bg-transparent'
+                                } ${npMode ? 'cursor-pointer caret-transparent hover:bg-notion-surface' : 'focus:bg-notion-blue-soft focus:shadow-[inset_0_0_0_2px_#097fe8]'}`}
                             />
                           </td>
                         )
@@ -468,9 +467,8 @@ export default function App() {
                 <button
                   key={g.letter}
                   onClick={() => setState((s) => ({ ...s, target: String(g.min) }))}
-                  className={`flex flex-col items-center rounded-md border py-2 transition-colors ${
-                    active ? 'border-notion-blue bg-notion-blue text-white' : 'border-notion-border hover:bg-notion-soft active:bg-notion-surface'
-                  }`}
+                  className={`flex flex-col items-center rounded-md border py-2 transition-colors ${active ? 'border-notion-blue bg-notion-blue text-white' : 'border-notion-border hover:bg-notion-soft active:bg-notion-surface'
+                    }`}
                 >
                   <span className="text-[16px] font-semibold">{g.letter}</span>
                   <span className={`text-[12px] tabular-nums ${active ? 'text-white/75' : 'text-notion-muted'}`}>{g.min}+</span>
