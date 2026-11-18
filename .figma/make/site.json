@@ -1,0 +1,10 @@
+{
+  "description": "Helps university students calculate the exam score they need by entering grades for 15 weeks of lectures, practice, and independent study, plus their target final grade.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
